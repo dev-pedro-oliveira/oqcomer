@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O que a Élida quer comer? 🍽️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TELA 1: ENTRADA -->
+  <div id="tela-entrada" class="tela ativa">
+
+    <div class="emojis-fundo" aria-hidden="true">
+      <span>🍕</span><span>🍣</span><span>🌮</span>
+      <span>🍔</span><span>🍜</span><span>🥗</span>
+      <span>🍛</span><span>🥩</span><span>🍝</span>
+    </div>
+
+    <div class="entrada-conteudo">
+      <div class="titulo-box">
+        <span class="titulo-emoji">🤔</span>
+        <h1 class="titulo-principal">O que a<br/><span class="destaque">Élida</span><br/>quer comer hoje?</h1>
+      </div>
+
+      <p class="subtitulo">Deixa o destino decidir! ✨</p>
+
+      <button id="btn-comecar" class="btn-grande btn-laranja">
+        🎲 Começar o Sorteio!
+      </button>
+    </div>
+
+  </div>
+
+  <!-- TELA 2: ROLETA -->
+  <div id="tela-roleta" class="tela">
+
+    <h2 class="titulo-roleta">🍽️ Vamos ver...</h2>
+
+    <div class="roleta-wrapper">
+      <div class="roleta-seta">▼</div>
+      <div class="roleta-janela">
+        <div id="roleta-tambor" class="roleta-tambor">
+          <!-- Itens inseridos pelo JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <button id="btn-girar" class="btn-grande btn-verde">
+      🎯 Girar!
+    </button>
+
+  </div>
+
+  <!-- TELA 3: RESULTADO -->
+  <div id="tela-resultado" class="tela">
+
+    <div class="resultado-conteudo">
+      <div class="confetes" id="confetes"></div>
+
+      <p class="resultado-label">A refeição de hoje é:</p>
+
+      <div class="resultado-card">
+        <span id="resultado-emoji" class="resultado-emoji">🍕</span>
+        <h2 id="resultado-nome" class="resultado-nome">Pizza!</h2>
+      </div>
+
+      <div class="resultado-acoes">
+        <button id="btn-sortear-novamente" class="btn-grande btn-laranja">
+          🔄 Sortear novamente
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
